@@ -1,20 +1,66 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container">
+    <!-- Our main project -->
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>I am in the app component!</h3>
+            <hr>
+            <app-servers></app-servers>
+            <!-- <div app-servers></div> -->
+            <!-- <div class="app-servers"></div> -->
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <!-- Start of Our Examples -->
+    <h2>Section 5</h2>
+    <h3>Components and Databinding Deep Dive</h3>
+    <app-local-reference></app-local-reference>
+    <div>
+        <h3>68. More on View Encapsulation</h3>
+        If your component imports 'ViewEncapsulation' from angular/core <br>
+        Then, in the same area as your selector, templateUrl and styleUrls you <br>
+        define <br>
+        encapsulation: ViewEncapsulation.Emulated; <br>
+        This is the default. <br>
+        encapsulation: ViewEncapsulation.None; <br>
+        Your components styles will be applied globally. <br>
+        encapsulation: ViewEncapsulation.Native; <br>
+        Forces you component to use the shadow DOM, which will look the same <br>
+        as the default if you browser can handle it.<br>
+        <br> 
+        <h3>67. View Encapsulation</h3>
+        In addition to the shadow dom (which isn't widely supported), angular gives the div containing components <br>
+        containing each of your components a unique attribute. <br>
+        Then, when it reads the css for that component, it modifies the selector <br>
+        so it only applies to that container. For example: <br>
+        p {{ '{' }} color: blue; {{ '}' }} <br>
+        becomes <br>
+        p [ejo-101] {{ '{' }} color: blue; {{ '}' }} <br>
+        Then, the containing for your component is given the unique attribute <br>
+        [ejo-101].
+    </div>
+    <app-custom-event-binding></app-custom-event-binding>
+    <app-custom-property-binding></app-custom-property-binding>
+    <h2>Directives</h2>
+    <ul>
+        <li>Components are directives with templates</li>
+        <li>Angular has very useful built in components without templates</li>
+    </ul>
+    <app-ng-for-index></app-ng-for-index>
+    <app-assignment-three></app-assignment-three>
+    <app-ng-for></app-ng-for>
+    <app-ng-style></app-ng-style>
+    <app-ng-class></app-ng-class>
+    <app-ng-if-else></app-ng-if-else>
+    <app-ng-if></app-ng-if>
+    <app-assignment-two></app-assignment-two>
+    <app-two-way-binding></app-two-way-binding>
+    <app-send-event-data></app-send-event-data>
+    <hr>
+    <h3>Event Binding</h3>
+    <app-event-binding></app-event-binding>
+    <hr>
+    <h3>Assignment 1</h3>
+    <app-success-alert></app-success-alert>
+    <app-warning-alert></app-warning-alert>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-

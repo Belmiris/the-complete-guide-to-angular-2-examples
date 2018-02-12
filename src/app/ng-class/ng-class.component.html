@@ -1,0 +1,5 @@
+<hr>
+<h3>36a. ngClass</h3>
+
+<div class="alert" [ngClass]="{'alert-success': success, 'alert-danger': !success}" role="alert">Press the button below to toggle the class</div>
+<button class="btn btn-primary" (click)="resetClass()">Change Alert Class (ngClass)</button>

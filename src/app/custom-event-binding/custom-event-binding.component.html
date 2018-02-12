@@ -1,0 +1,14 @@
+<hr>
+<h3>64. Custom Event Binding & 65. Assigning an Alias to Custom Events</h3>
+<ul>
+  <li>We use a new Angular class - EventEmitter</li>
+  <li>We use a new Angular decorator - @OutPut()</li>
+</ul>
+<div class="row">
+  <p>New Server Name: {{newName}} </p>
+  <p>New Server Content: {{newContent}} </p>
+  <div class="col-xs-12">
+    <!-- <app-custom-event-binding-detail (serverCreated)='onServerAdded($event)'></app-custom-event-binding-detail> -->
+    <app-custom-event-binding-detail (server-created)='onServerAdded($event)'></app-custom-event-binding-detail>
+  </div>
+</div>

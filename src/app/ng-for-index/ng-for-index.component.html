@@ -1,0 +1,12 @@
+<hr>
+<h3>39. ngFor with Index</h3>
+<ul>
+  <li>You can assign an Index to an ngFor loop</li>
+</ul>
+<button (click)="btnDetailsClick()" class="btn btn-primary">Display Details</button>
+<p *ngIf="displayDetails">Boo! The secret password is tuna.</p>
+<div *ngFor="let log of clickLogs; let i = index" 
+    [ngClass]="{'blue-log': (i > 4)}"
+    [ngStyle]="{'background-color': getColor(i)}">
+    {{ log }}
+</div>

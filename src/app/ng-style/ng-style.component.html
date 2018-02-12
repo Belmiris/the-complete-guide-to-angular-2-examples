@@ -1,0 +1,11 @@
+<hr>
+<h3>36. ngStyle</h3>
+<ul>
+  <li>Up until now we have been looking a structural directives. These add or remove html elements.</li>
+  <li>ngStyle is an attribute directive. These modify the html element they are placed on.</li>
+  <li>It is important to realize the we are attribute binding to the ngStyle directive of the element when we use[ngStyle]=?</li>
+  <li>ngStyle expects a javascript object.</li>
+</ul>
+
+<p [ngStyle]="{'background-color': getColor()}">Server status is: {{serverStatus}}</p>
+<button class="btn btn-primary" (click)="resetStatus()">Reset Server Status (ngStyle)</button>

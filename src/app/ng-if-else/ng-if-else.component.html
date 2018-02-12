@@ -1,0 +1,16 @@
+<hr>
+<h3>35. Enhancing ngIf with Else condition</h3>
+<ul>
+  <li>ngIf with else</li>
+  <li>Also, our first use of a local variable #noContent</li>
+</ul>
+<div class="panel panel-default">
+  <div class="panel-heading" (click)="contentShown=!contentShown">{{getHeaderText()}}</div>
+  <div *ngIf="contentShown; else noContent" class="panel-body">
+    Click header to hide content
+  </div>
+  <ng-template #noContent>
+    <p>Not showing content</p>
+  </ng-template>
+</div>
+  

@@ -1,0 +1,16 @@
+<hr>
+<h3>62. Custom Property Binding & 63. Custom Property Binding With Alias</h3>
+<ul>
+  <li>Define and expose custom properties on your component</li>
+  <li>We use the @Input() decorator wich must be imported from @angular core</li>
+  <li>This allows us to use custom attributes in out component markup [custom] = 'x'</li>
+  <li>You can also define aliases to the property, so it does not have to match the internal variable</li>
+</ul>
+<div class="row">
+  <div class="col-xs-12">
+    <app-custom-property-binding-detail 
+      *ngFor="let svr of serverElements"
+      [server-element]="svr">
+    </app-custom-property-binding-detail>
+  </div>
+</div>

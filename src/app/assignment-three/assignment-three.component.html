@@ -1,0 +1,14 @@
+<hr>
+<h3>Assignment 3 - Practice Directives</h3>
+1. Add an button which says Display Details. <br>
+2. Add a paragraph wih any content of your choice (eg. secret password = tuna) <br>
+3. Toggle the displaying of that paragraph with the button created in the first step. <br>
+4. Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number). <br>
+5. Starting at the fifth item, give all the future log items a blue background (via ngStyle) and a white color (ngClass).<br>
+<button (click)="btnDetailsClick()" class="btn btn-primary">Display Details</button>
+<p *ngIf="displayDetails">Boo! The secret password is tuna.</p>
+<div *ngFor="let log of clickLogs; let i = index" 
+    [ngClass]="{'blue-log': (i > 4)}"
+    [ngStyle]="{'background-color': getColor(i)}">
+    {{ log }}
+</div>

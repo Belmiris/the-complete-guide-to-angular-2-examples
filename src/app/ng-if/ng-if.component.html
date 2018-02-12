@@ -1,0 +1,9 @@
+<hr>
+<h3>ngIf Directive Example</h3>
+<div class="panel panel-default">
+  <div class="panel-heading" (click)="contentShown=!contentShown">{{getHeaderText()}}</div>
+  <div *ngIf="contentShown" class="panel-body">
+    Click header to hide content
+  </div>
+</div>
+  

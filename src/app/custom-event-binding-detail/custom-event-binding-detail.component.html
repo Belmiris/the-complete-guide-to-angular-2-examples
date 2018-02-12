@@ -1,0 +1,7 @@
+<button class="btn btn-primary" (click)="onAddClick()">Add a Server</button>
+<div *ngFor="let element of serverElements">
+  <hr>
+  <div>
+    <span>Type:</span>{{element.type}}, <span>Name:</span>{{element.name}}, <span>Content:</span>{{element.content}}
+  </div>
+</div>

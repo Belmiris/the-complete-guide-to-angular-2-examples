@@ -1,0 +1,15 @@
+<hr>
+<h3>69. Using Local References in Templates</h3>
+<ul>
+  <li>The references are ONLY AVAILABLE IN THE DOM</li>
+  <li>Use the hash symbol to name the reference #myInput</li>
+  <li>Use the reference WITHOUT THE HASH in the rest of the template. </li>
+</ul>
+<!-- The input control is assigned a local reference of myInput -->
+<input type="text" #myInput>
+<!-- This local reference can only be seen in the Template, not the typescript -->
+<!-- But we can pass it in. -->
+<!-- Below we pass the entire input element -->
+<button class="btn btn-success" (click)="onClick1(myInput)">Log Element</button>
+<!-- Below we pass only the value of the input element -->
+<button class="btn btn-success" (click)="onClick2(myInput.value)">Log Element Value</button>
