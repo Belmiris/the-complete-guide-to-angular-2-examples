@@ -1,0 +1,12 @@
+<hr>
+<h3>72. Understanding the Component Life Cycle</h3>
+<ul>
+    <li>ngOnChanges - Called after a bound input property changes (@Input). May be executed more than once.</li>
+    <li>ngOnInit - Called once the component is initialized. Runs after the constructor.</li>
+    <li>ngDoCheck - Called after every change in detection run. Runs a lot.</li>
+    <li>ngAfterContentInit - Called after the content [ng-content] has been projected into the view.</li>
+    <li>ngAfterContentChange - Called every time the projected content has been checked.</li>
+    <li>ngAfterViewInit - Called after the component's view (and child views) has been initialized.</li>
+    <li>ngAfterViewChecked - Called every time the view (and child views) have been checked.</li>
+    <li>ngOnDestroy - Called once the component is about to be destroyed.</li>
+</ul>

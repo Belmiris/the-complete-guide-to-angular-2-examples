@@ -23,6 +23,9 @@ import { CustomPropertyBindingDetailComponent } from './custom-property-binding-
 import { CustomEventBindingComponent } from './custom-event-binding/custom-event-binding.component';
 import { CustomEventBindingDetailComponent } from './custom-event-binding-detail/custom-event-binding-detail.component';
 import { LocalReferenceComponent } from './local-reference/local-reference.component';
+import { ViewChildAndDomComponent } from './view-child-and-dom/view-child-and-dom.component';
+import { NgContentProjectionComponent } from './ng-content-projection/ng-content-projection.component';
+import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { LocalReferenceComponent } from './local-reference/local-reference.compo
     CustomPropertyBindingDetailComponent,
     CustomEventBindingComponent,
     CustomEventBindingDetailComponent,
-    LocalReferenceComponent
+    LocalReferenceComponent,
+    ViewChildAndDomComponent,
+    NgContentProjectionComponent,
+    ComponentLifecycleComponent
   ],
   imports: [
     BrowserModule,

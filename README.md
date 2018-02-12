@@ -1,7 +1,7 @@
 # Angular5Guide
 
-This project is my work for the udemy course the-complete-guide-to-angular-2
-This is the application project.
+This project is the examples for the udemy course the-complete-guide-to-angular-2
+This is the examples project.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
