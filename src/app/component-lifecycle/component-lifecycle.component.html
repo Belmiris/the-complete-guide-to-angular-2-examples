@@ -10,3 +10,10 @@
     <li>ngAfterViewChecked - Called every time the view (and child views) have been checked.</li>
     <li>ngOnDestroy - Called once the component is about to be destroyed.</li>
 </ul>
+You can see an example of ngAfterViewInit by commenting out the console.log statements in the component-lifecycle.component.ts file. <br>
+<input type="text" value="{{textValue}}" #inputBox> <br>
+You can see an example of ngAfterContentInit by commenting out the console.log statements in the <br>
+component-lifecycle-detail.component.ts file. <br>
+<app-component-lifecycle-detail>
+    <p #myParagraph>"{{textValue}}"</p>
+</app-component-lifecycle-detail>

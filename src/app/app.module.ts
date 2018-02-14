@@ -26,6 +26,11 @@ import { LocalReferenceComponent } from './local-reference/local-reference.compo
 import { ViewChildAndDomComponent } from './view-child-and-dom/view-child-and-dom.component';
 import { NgContentProjectionComponent } from './ng-content-projection/ng-content-projection.component';
 import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
+import { ComponentLifecycleDetailComponent } from './component-lifecycle-detail/component-lifecycle-detail.component';
+import { AssignmentFourComponent } from './assignment-four/assignment-four.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +57,12 @@ import { ComponentLifecycleComponent } from './component-lifecycle/component-lif
     LocalReferenceComponent,
     ViewChildAndDomComponent,
     NgContentProjectionComponent,
-    ComponentLifecycleComponent
+    ComponentLifecycleComponent,
+    ComponentLifecycleDetailComponent,
+    AssignmentFourComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
