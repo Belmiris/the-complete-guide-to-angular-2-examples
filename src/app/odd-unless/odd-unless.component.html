@@ -1,0 +1,26 @@
+<hr>
+<h3>92. Building a Structural Directive.</h3>
+<h4>We use out own structural directive odd-unless-directive here rather than *ngFor.</h4>
+<h4>WARNING! The string used for the selector must be the name of the Directive! (appUnless here)</h4>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="oddOnly = !oddOnly">Only show odd numbers {{oddOnly}}</button>
+      <br>
+      <ul>
+        <div class="list-group" *ngFor="let number of numbers">
+          <li class="list-group-item" *appUnless="!oddOnly || number % 2 != 0"
+              [ngClass]="{odd: number % 2 != 0 }"
+              [ngStyle]="{backgroundColor: number % 2 != 0 ? 'yellow' : 'transparent'}">
+            {{ number }}
+          </li>
+          <li class="list-group-item" *appUnless="oddOnly"
+              [ngClass]="{odd: number % 2 != 0 }"
+              [ngStyle]="{backgroundColor: number % 2 != 0 ? 'yellow' : 'transparent'}">
+            {{ number }}
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

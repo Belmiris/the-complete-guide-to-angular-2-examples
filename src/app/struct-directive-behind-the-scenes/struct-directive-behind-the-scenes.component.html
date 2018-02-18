@@ -1,0 +1,9 @@
+<hr>
+<h3>91. What Happens Behind the scenes on Structural Directives</h3>
+<button class="btn btn-primary" (click)="show = !show">Show / Hide</button>
+<div *ngIf="show">
+  This is just some stuff in a div. Show based on *ngIf.
+</div>
+<ng-template [ngIf]="show">
+  This is some stuff in an ng-template. Show based on ngIf - no asterisk. Simple directive property binding.
+</ng-template>

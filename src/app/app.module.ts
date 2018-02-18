@@ -31,6 +31,15 @@ import { AssignmentFourComponent } from './assignment-four/assignment-four.compo
 import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
+import { OddOnlyComponent } from './odd-only/odd-only.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { EvenBetterHighlightDirective } from './even-better-highlight.directive';
+import { BindingHighlightDirective } from './binding-highlight.directive';
+import { StructDirectiveBehindTheScenesComponent } from './struct-directive-behind-the-scenes/struct-directive-behind-the-scenes.component';
+import { UnlessDirective } from './unless/unless.directive';
+import { OddUnlessComponent } from './odd-unless/odd-unless.component';
+import { UnderstandNgSwitchComponent } from './understand-ng-switch/understand-ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +71,16 @@ import { EvenComponent } from './even/even.component';
     AssignmentFourComponent,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    OddOnlyComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    EvenBetterHighlightDirective,
+    BindingHighlightDirective,
+    StructDirectiveBehindTheScenesComponent,
+    UnlessDirective,
+    OddUnlessComponent,
+    UnderstandNgSwitchComponent
   ],
   imports: [
     BrowserModule,

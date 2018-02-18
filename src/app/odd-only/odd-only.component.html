@@ -1,0 +1,44 @@
+<hr>
+<h3>90. Binding to Directive Properties.</h3>
+<h3>89. Creating an Attribute Directive using HostBinding. It also reacts to mouseover</h3>
+<h3>88. Use HostBinding to listen to host events.</h3>
+<h3>87. Creating an Even Better Attribute Directive using the HostListener. It reacts to mouseover</h3>
+<h3>86. Creating a Better Attribute Directive using the Renderer</h3>
+<h3>85. Creating a Basic Attribute Directive</h3>
+<h3>84. ngClass and ngStyle Recap</h3>
+<h3>83. ngFor and ngIf Recap</h3>
+<h4>NOTE: all this is hosted in the odd-only component.</h4>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="oddOnly = !oddOnly">Only show odd numbers</button>
+      <br><br>
+      <ul>
+        <div class="list-group" *ngFor="let number of numbers">
+          <li class="list-group-item" *ngIf="!oddOnly" 
+              [ngClass]="{odd: number % 2 != 0 }"
+              [ngStyle]="{backgroundColor: number % 2 != 0 ? 'yellow' : 'transparent'}">
+            {{ number }}
+          </li>
+          <li class="list-group-item" *ngIf="oddOnly && number % 2 != 0" 
+              [ngClass]="{odd: number % 2 != 0 }"
+              [ngStyle]="{backgroundColor: number % 2 != 0 ? 'yellow' : 'transparent'}">
+            {{ number }}
+          </li>
+        </div>
+      </ul>
+      <p appBasicHighlight>Style me with basic highlight directive</p>
+      <p appBetterHighlight>Style me with better highlight directive</p>
+      <p appEvenBetterHighlight>Style me with an even better highlight directive</p>
+      <!-- <p appBindingHighlight>Style me with a HostBinding highlight directive</p> -->
+      <!-- You can avoid the double / single qotes by removing the square brackets from the attributes -->
+      <p appBindingHighlight [default-color]="'orange'" [hover-color]="'red'" [default-backcolor]="'transparent'" [hover-backcolor]="'orange'">
+        Style me with a HostBinding highlight and set custom properties directive
+      </p>
+      <!-- You can avoid the double quotes + single quotes by removing the square brackets from the attributes -->
+      <p appBindingHighlight default-color='orange' hover-color='red' default-backcolor='transparent' hover-backcolor='orange'>
+          HostBinding highlight Directive: remove square brackets to avoid using double quotes + single quotes (string values only).
+        </p>
+      </div>
+  </div>
+</div>
