@@ -43,6 +43,8 @@ import { UnderstandNgSwitchComponent } from './understand-ng-switch/understand-n
 import { AccountComponent } from './account/account.component';
 import { NewAccountComponent } from './new-account/new-account.component';
 import { AccountsExampleComponent } from './accounts-example/accounts-example.component';
+import { AccountsService } from './accounts.service';
+import { LoggingService } from './logging.service';
 
 @NgModule({
   declarations: [
@@ -92,7 +94,7 @@ import { AccountsExampleComponent } from './accounts-example/accounts-example.co
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AccountsService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

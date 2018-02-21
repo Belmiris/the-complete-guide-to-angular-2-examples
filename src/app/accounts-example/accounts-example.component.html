@@ -3,6 +3,12 @@
 <h4>97. Creating a Logging Service</h4>
 <h4>98. Injecting the Logging Service into Components</h4>
 <p>Remember to put the name of your service into a new 'providers' array in your component.</p>
+<p>Angular Dependency Injection is Hierarchical.</p>
+<p>This is counter-intuitive so note: A new Service is created when the name of the Service is in the providers array of the component / directive</p>
+<p>providers: [myService] </p>
+<p>A Service created in a module is the same instance for that module and all child modules.</p>
+<p>Create a Service in the App Module if you want the entire application to see it.</p>
+<p>Injecting Services into another service is tricky. You need to provide the parent Service with meta-data by decorating it with @Injectable.</p>
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-8 col-md-offset-2">
