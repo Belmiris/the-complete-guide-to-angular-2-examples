@@ -40,6 +40,9 @@ import { StructDirectiveBehindTheScenesComponent } from './struct-directive-behi
 import { UnlessDirective } from './unless/unless.directive';
 import { OddUnlessComponent } from './odd-unless/odd-unless.component';
 import { UnderstandNgSwitchComponent } from './understand-ng-switch/understand-ng-switch.component';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
+import { AccountsExampleComponent } from './accounts-example/accounts-example.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +83,10 @@ import { UnderstandNgSwitchComponent } from './understand-ng-switch/understand-n
     StructDirectiveBehindTheScenesComponent,
     UnlessDirective,
     OddUnlessComponent,
-    UnderstandNgSwitchComponent
+    UnderstandNgSwitchComponent,
+    AccountComponent,
+    AccountsExampleComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
