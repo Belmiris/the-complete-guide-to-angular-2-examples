@@ -45,6 +45,9 @@ import { NewAccountComponent } from './new-account/new-account.component';
 import { AccountsExampleComponent } from './accounts-example/accounts-example.component';
 import { AccountsService } from './accounts.service';
 import { LoggingService } from './logging.service';
+import { AssignmentFiveComponent } from './assignment-five/assignment-five.component';
+import { ActiveUsersComponent } from './assignment-five/active-users/active-users.component';
+import { InactiveUsersComponent } from './assignment-five/inactive-users/inactive-users.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +91,10 @@ import { LoggingService } from './logging.service';
     UnderstandNgSwitchComponent,
     AccountComponent,
     AccountsExampleComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    AssignmentFiveComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,

@@ -9,16 +9,17 @@
 <p>A Service created in a module is the same instance for that module and all child modules.</p>
 <p>Create a Service in the App Module if you want the entire application to see it.</p>
 <p>Injecting Services into another service is tricky. You need to provide the parent Service with meta-data by decorating it with @Injectable.</p>
+<p>You can place event emitters on services and subscribe to them. This allows cross component communication.</p>
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-8 col-md-offset-2">
-      <app-new-account (accountAdded)="onAccountAdded($event)"></app-new-account>
+      <app-new-account></app-new-account>
       <hr>
       <app-account
         *ngFor="let acc of accounts; let i = index"
         [account]="acc"
         [id]="i"
-        (statusChanged)="onStatusChanged($event)"></app-account>
+      ></app-account>
     </div>
   </div>
 </div>
